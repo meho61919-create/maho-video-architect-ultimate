@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Maho Video Architect: ULTIMATE 20",
+  "version": "3.0",
+  "description": "20 Dev Özellik: Sinematik Kontrol Paneli",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

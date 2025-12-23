@@ -1,0 +1,84 @@
+#maho-video-ui {
+  position: fixed;
+  top: 15px;
+  right: 80px;
+  z-index: 2147483647;
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(25px);
+  border: 1px solid #00f2ff;
+  border-radius: 20px;
+  padding: 18px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  display: none;
+  width: 320px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 40px rgba(0, 242, 255, 0.2);
+}
+
+#maho-video-ui::-webkit-scrollbar { width: 5px; }
+#maho-video-ui::-webkit-scrollbar-thumb { background: #00f2ff; border-radius: 10px; }
+
+.maho-header {
+  font-size: 16px;
+  font-weight: 900;
+  color: #00f2ff;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+}
+
+.maho-section-title {
+  font-size: 10px;
+  color: #666;
+  text-transform: uppercase;
+  margin: 10px 0 5px;
+  border-bottom: 1px solid #222;
+}
+
+.maho-row { margin-bottom: 12px; }
+.maho-label-grid { display: flex; justify-content: space-between; margin-bottom: 4px; }
+.maho-label { font-size: 11px; font-weight: bold; }
+.maho-val { font-size: 11px; color: #00f2ff; }
+
+input[type="range"] { width: 100%; accent-color: #00f2ff; cursor: pointer; }
+
+.maho-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.maho-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.maho-btn:hover { border-color: #00f2ff; color: #00f2ff; background: rgba(0, 242, 255, 0.1); }
+.maho-btn.active { background: #00f2ff; color: #000; }
+
+#maho-floating-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  background: #00f2ff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 2147483647;
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+}
